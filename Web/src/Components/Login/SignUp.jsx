@@ -73,7 +73,7 @@ const SignUp = () => {
               className="no-underline border-b border-blue text-blue"
               
             >
-              <Link to = "/signin"> Log in </Link>
+              <Link to = "/"> Log in </Link>
             </a>
             .
           </div>
