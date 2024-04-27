@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <div className="bg-gray-300">
+      <div>
         <Router>
           <Routes>
             <Route path="/" element={<SignIn />}></Route>

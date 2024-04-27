@@ -1,0 +1,119 @@
+.box-shadow {
+  -webkit-box-shadow: -0.5px 9.5px 14px 4px #6c6c6c;
+  -moz-box-shadow: -0.5px 9.5px 14px 4px #6c6c6c;
+  box-shadow: -0.5px 9.5px 14px 4px #6c6c6c;
+}
+
+.app__feedcard {
+  width: 700px;
+  margin: auto auto;
+  @media screen and (max-width: 370px) {
+    width: 300px;
+  }
+}
+.app__feedcard-container {
+  background-color: #d2dbea;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  @extend .box-shadow;
+}
+
+.app__feedcard-profile {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+
+  top: -5%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+}
+
+.app__feedcard-image {
+  width: 650px;
+  img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+}
+.app__feedcard-Userinfo,
+.app__feedcard-imageInfo {
+  width: 100%;
+  font-family: var(--font-base);
+  font-weight: 700;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.app__feedcard-Userinfo {
+  width: 160%;
+  margin-top: 2.6rem;
+  .app__feedcard-icon {
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    div {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 50%;
+      @extend .box-shadow;
+    }
+
+    svg {
+      font-size: xx-large;
+    }
+  }
+}
+
+.app__feedcard-imageInfo {
+  margin: 1rem;
+  margin-bottom: 3rem;
+}
+
+.app__feedcard-actions {
+  position: absolute;
+  bottom: -5%;
+
+  width: 100%;
+  display: flex;
+
+  .app__feedcard-icon {
+    flex: 1;
+    margin: 1rem;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 1rem;
+    display: flex;
+    div {
+      background-color: white;
+      padding: 0.5rem;
+      border-radius: 50%;
+      height: fit-content;
+
+      svg {
+        font-size: xx-large;
+      }
+    }
+  }
+  .app__feedcard-btn {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    padding: 0 3rem;
+    justify-content: flex-end;
+    button {
+      background-color: rgb(255, 60, 0);
+      border-radius: 1.5rem;
+      padding: 1rem;
+      font-weight: 800;
+      color: white;
+    }
+  }
+}
