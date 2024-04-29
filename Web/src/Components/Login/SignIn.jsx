@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import placeholder from "/src/assets/login-page-img.svg"
 
 const SignIn = () => {
   return (
@@ -7,8 +8,8 @@ const SignIn = () => {
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
-            className="mx-auto h-10 w-auto"
-            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+            className="size-full"
+            src={placeholder}
             alt="Your Company"
           />
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
@@ -17,7 +18,7 @@ const SignIn = () => {
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form className="space-y-6" action="#" method="POST">
+          <form className="space-y-6" action="/home" method="POST">
             <div>
               <label
                 htmlFor="email"
@@ -28,7 +29,7 @@ const SignIn = () => {
               <div className="mt-2">
                 <input
                   type="text"
-                  className="block border  border-black w-full p-3 rounded mb-4"
+                  className="block border border-t-2 border-x border-t-emerald-500  w-full p-3 rounded mb-4"
                   name="email"
                   placeholder="Email"
                 />
@@ -55,7 +56,7 @@ const SignIn = () => {
               <div className="mt-2">
                 <input
                   type="password"
-                  className="block border border-black w-full p-3 rounded mb-4"
+                  className="block border-t-2 border-x border-t-emerald-500  w-full p-3 rounded mb-4"
                   name="password"
                   placeholder="Password"
                 />
@@ -65,7 +66,7 @@ const SignIn = () => {
             <div>
               <button
                 type="submit"
-                className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="flex w-full justify-center rounded-full bg-teal-500 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-teal-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                <Link to ="/home"> Sign in </Link>
               </button>
