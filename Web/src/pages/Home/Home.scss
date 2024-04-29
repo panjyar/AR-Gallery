@@ -1,0 +1,23 @@
+.app__home {
+  margin-top: 2rem;
+}
+.app__home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.app__home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .app__home-logo {
+    img {
+      width: 200px;
+    }
+  }
+  .app__home-activity {
+    img {
+      width: 50px;
+    }
+  }
+}
